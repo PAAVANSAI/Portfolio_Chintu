@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arempula Chintu | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Arempula Chintu – Computer Science graduate skilled in Java, Python, and Web Development. Explore projects, skills, and get in touch.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Chintu<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting reveal-up">Hello, I'm</p>
+            <h1 class="hero-name reveal-up">
+                <span class="name-first">Arempula</span>
+                <span class="name-last">Chintu</span>
+            </h1>
+            <div class="hero-role reveal-up">
+                <span class="role-prefix">I'm a </span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description reveal-up">
+                Recent Computer Science graduate with hands-on experience in Java, Python, and Web Development.
+                Passionate about building real-world applications.
+            </p>
+            <div class="hero-cta reveal-up">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat">
+                    <span class="stat-number" data-count="7.0">0</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Tech Skills</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-image-wrapper">
+                        <div class="about-avatar">
+                            <span class="avatar-initials">AC</span>
+                        </div>
+                        <div class="about-image-border"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="badge-number">B.Tech</span>
+                        <span class="badge-text">CSE Graduate</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-subtitle">A Passionate Software Developer</h3>
+                    <p class="about-text">
+                        I'm <strong>Arempula Chintu</strong>, a recent Computer Science graduate from
+                        <strong>Sri Chaitanya Technical Campus, Hyderabad</strong>. With hands-on experience
+                        in Java, Python, and web development, I'm eager to contribute to real-world applications
+                        while continuing to learn and grow in a collaborative environment.
+                    </p>
+                    <p class="about-text">
+                        My academic journey has equipped me with strong foundations in Software Engineering,
+                        Operating Systems, Data Structures & Algorithms, Artificial Intelligence, and System Design.
+                        I believe in the power of technology to transform ideas into impactful solutions.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Suryapet, Telangana</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🎓</span>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">B.Tech CSE</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">arempulachintu09@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">📱</span>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 9515979011</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">🗣️</span>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">English, Telugu</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon">💡</span>
+                            <div>
+                                <span class="info-label">Interests</span>
+                                <span class="info-value">Data Analysis, Decision Making</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                                <p class="timeline-subtitle">Computer Science Engineering</p>
+                            </div>
+                            <span class="timeline-badge">CGPA: 7.0</span>
+                        </div>
+                        <p class="timeline-institution">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                            Sri Chaitanya Technical Campus, Ibrahimpatnam, Hyderabad
+                        </p>
+                        <p class="timeline-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            Dec 2021 – Jun 2025
+                        </p>
+                        <p class="timeline-details">Relevant Coursework: Software Engineering, Operating Systems, DS
+                            Algorithms, Artificial Intelligence, System Design</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Intermediate (MPC)</h3>
+                                <p class="timeline-subtitle">Mathematics, Physics, Chemistry</p>
+                            </div>
+                            <span class="timeline-badge">728 Marks</span>
+                        </div>
+                        <p class="timeline-institution">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                            Sri Medha Jr College, Suryapet
+                        </p>
+                        <p class="timeline-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            Jul 2018 – May 2021
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Secondary School (SSC)</h3>
+                                <p class="timeline-subtitle">High School Education</p>
+                            </div>
+                            <span class="timeline-badge">CGPA: 8.2</span>
+                        </div>
+                        <p class="timeline-institution">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                            TS Residential School Boys, Thungathurthy
+                        </p>
+                        <p class="timeline-date">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            Completed May 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-up" id="project-iot">
+                    <div class="project-card-glow"></div>
+                    <div class="project-number">01</div>
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+                            <line x1="7" y1="2" x2="7" y2="22" />
+                            <line x1="17" y1="2" x2="17" y2="22" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <line x1="2" y1="7" x2="7" y2="7" />
+                            <line x1="2" y1="17" x2="7" y2="17" />
+                            <line x1="17" y1="17" x2="22" y2="17" />
+                            <line x1="17" y1="7" x2="22" y2="7" />
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Securing Data in IoT using Cryptography & Steganography</h3>
+                    <p class="project-date">Jun 2025</p>
+                    <ul class="project-details">
+                        <li>The Internet of Things (IoT) connects billions of smart devices, enabling seamless data
+                            exchange across homes, industries, and cities.</li>
+                        <li>Addresses sensitive data exposure to cyber threats using <strong>cryptography</strong> and
+                            <strong>steganography</strong> as a powerful combination.</li>
+                        <li>Cryptography protects data by converting it into unreadable formats, ensuring
+                            confidentiality and integrity.</li>
+                        <li>Steganography adds an extra layer by hiding the very existence of data within innocuous
+                            files like images or audio.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Cryptography</span>
+                        <span class="tag">Steganography</span>
+                        <span class="tag">Security</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal-up" id="project-crypto">
+                    <div class="project-card-glow"></div>
+                    <div class="project-number">02</div>
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Cryptocurrency Price Analysis with Artificial Intelligence</h3>
+                    <p class="project-date">Jan 2025</p>
+                    <ul class="project-details">
+                        <li>Cryptocurrency is a peer-to-peer digital money and payment system existing entirely online
+                            via controlled algorithms.</li>
+                        <li>Leverages <strong>Artificial Neural Networks (ANN)</strong> and <strong>Long Short-Term
+                                Memory (LSTM)</strong> networks for price prediction.</li>
+                        <li>Uncovers hidden patterns in historical data, analyzes real-time market signals, and
+                            forecasts future price movements.</li>
+                        <li>Processes vast datasets including trading volumes, social media sentiment, and macroeconomic
+                            indicators.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">AI / ML</span>
+                        <span class="tag">ANN</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skill-category reveal-up" id="skill-technical">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-category-title">Technical Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>SQL</span>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Core Java</span>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>HTML & CSS</span>
+                                <span>Proficient</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>JavaScript</span>
+                                <span>Proficient</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category reveal-up" id="skill-frameworks">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-category-title">Frameworks & Techniques</h3>
+                    <div class="skill-chips">
+                        <div class="chip">
+                            <span class="chip-dot"></span>
+                            Spring Boot
+                        </div>
+                        <div class="chip">
+                            <span class="chip-dot"></span>
+                            Spring Framework
+                        </div>
+                        <div class="chip">
+                            <span class="chip-dot"></span>
+                            Program Testing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category reveal-up" id="skill-tools">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-category-title">Tools & Software</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 12l2 2 4-4" />
+                                </svg>
+                            </div>
+                            <span>Eclipse</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                </svg>
+                            </div>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                </svg>
+                            </div>
+                            <span>Oracle</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M4 17l6-6-6-6" />
+                                    <line x1="12" y1="19" x2="20" y2="19" />
+                                </svg>
+                            </div>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category reveal-up" id="skill-soft">
+                    <div class="skill-category-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="soft-skills-list">
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">🎤</div>
+                            <div>
+                                <h4>Communication</h4>
+                                <p>Strong verbal and written communication skills</p>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">🔍</div>
+                            <div>
+                                <h4>Analytical Thinking</h4>
+                                <p>Curious mindset for data analysis and decision making</p>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">🤝</div>
+                            <div>
+                                <h4>Team Player</h4>
+                                <p>Eager to contribute and grow in collaborative environments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3 class="contact-heading">Let's Work Together</h3>
+                    <p class="contact-text">
+                        I'm actively seeking opportunities in software development. Whether you have a project in mind,
+                        a job opportunity, or just want to say hello — I'd love to hear from you!
+                    </p>
+                    <div class="contact-cards">
+                        <a href="mailto:arempulachintu09@gmail.com" class="contact-card" id="contact-email">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">arempulachintu09@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919515979011" class="contact-card" id="contact-phone">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 9515979011</span>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-card" id="contact-location">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Patharlapahad, Suryapet 508213, Telangana</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="formName" class="form-input" placeholder=" " required>
+                            <label for="formName" class="form-label">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+                            <label for="formEmail" class="form-label">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="formSubject" class="form-input" placeholder=" ">
+                            <label for="formSubject" class="form-label">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="formMessage" class="form-input form-textarea" placeholder=" " rows="4"
+                                required></textarea>
+                            <label for="formMessage" class="form-label">Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="formSubmitBtn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Chintu<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by Arempula Chintu</p>
+                <div class="footer-socials">
+                    <a href="mailto:arempulachintu09@gmail.com" class="social-link" aria-label="Email"
+                        id="footer-email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"
+                        id="footer-linkedin">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="tel:+919515979011" class="social-link" aria-label="Phone" id="footer-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-copyright">&copy; 2025 Arempula Chintu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
